@@ -18,4 +18,17 @@
       <button class="load-more">load more</button>
       </div>
    </main>
+
+   <section class="merchandise">
+      <div class="container">
+         @foreach (config('shops') as $shop)
+
+         <div class="action-shop">
+
+            <img src="/img/{{$shop['url']}}" alt="">
+            <h1>{{$shop['text']}}</h1>
+         </div>
+         @endforeach
+      </div>
+    </section>
 @endsection

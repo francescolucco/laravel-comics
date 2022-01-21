@@ -172,6 +172,43 @@ main .container .load-more:hover {
   transition: 0.3s;
 }
 
+section.merchandise {
+  height: 150px;
+  background-color: #0282f9;
+}
+section.merchandise:hover {
+  transition: 0.8s;
+  filter: invert(1);
+}
+section.merchandise .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+section.merchandise .container .action-shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+}
+section.merchandise .container .action-shop:hover img, section.merchandise .container .action-shop:hover h1 {
+  filter: invert(1);
+  transform: scale(1.075);
+  transition: 0.25s;
+}
+section.merchandise .container .action-shop img {
+  height: 35%;
+}
+section.merchandise .container .action-shop h1 {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 7px;
+  margin-right: 20px;
+  font-size: 0.75rem;
+}
+
 .footer-top {
   height: 480px;
   background-image: url("/img/footer-bg.jpg");

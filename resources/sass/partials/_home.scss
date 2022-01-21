@@ -83,4 +83,37 @@ main{
      }
    }
  }
+ section.merchandise{
+   height: 150px;
+   background-color: $merchandaise-color;
+   &:hover{
+     transition: 0.8s;
+     filter: invert(1);
+   }
+   .container{
+     @include around();
+     height: 100%;
+   .action-shop{
+       @include center();
+       cursor: pointer;
+       height: 100%;
+       &:hover img, &:hover h1{
+           filter: invert(1);
+           transform: scale(1.075);
+           transition: 0.25s;
+         }
+       img{
+         height: 35%;
+               }
+       h1{
+         color: white;
+         text-transform: uppercase;
+         margin-left: 7px;
+         margin-right: 20px;
+         font-size: 0.75rem;
+       }
+     }
+   }
+ }
+ 
  
