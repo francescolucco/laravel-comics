@@ -1,0 +1,48 @@
+//
+header{
+   height: 130px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .box-logo img{
+     padding: 20px 20px 20px 0;
+   }
+   nav{
+     height: 100%;
+     ul{
+       @include center();
+       list-style: none;
+       height: 100%;
+       li{
+         height: 100%;
+         margin-left: 25px;
+         @include center();
+         border-bottom: 5px solid white;
+         cursor: pointer;
+         &:hover{
+           border-bottom: 5px solid $logo-color;
+           transition: 0.1s;
+         }
+         &:hover a{
+           color: $logo-color;
+           transition: 0.1s;
+           font-size: bold;
+         }
+         &.active{
+           border-bottom: 5px solid $logo-color;
+         }
+         a{
+           text-decoration:none;
+           color: $primary-color;
+           text-transform: uppercase;
+           font-weight: bold;
+           &.active{
+             color: $logo-color;
+           }
+         }
+       }
+     }
+   }
+   
+ }

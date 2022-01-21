@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Inter&family=Lato&family=PT+Sans&display=swap);* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Acme", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 65%;
+  margin: 0 auto;
+}
+
+a {
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box-logo img {
+  padding: 20px 20px 20px 0;
+}
+header nav {
+  height: 100%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+}
+header nav ul li {
+  height: 100%;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid white;
+  cursor: pointer;
+}
+header nav ul li:hover {
+  border-bottom: 5px solid #0c7cec;
+  transition: 0.1s;
+}
+header nav ul li:hover a {
+  color: #0c7cec;
+  transition: 0.1s;
+  font-size: bold;
+}
+header nav ul li.active {
+  border-bottom: 5px solid #0c7cec;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #303030;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header nav ul li a.active {
+  color: #0c7cec;
+}
+
+.jumbotron {
+  background-image: url("/img/jumbotron.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.footer-top {
+  height: 480px;
+  background-image: url("/img/footer-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.footer-top .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-top .container .menu-footer {
+  height: 480px;
+  padding: 50px 0;
+}
+.footer-top .container .menu-footer .col {
+  float: left;
+  width: 150px;
+  padding-bottom: 40px;
+}
+.footer-top .container .menu-footer .col .title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-top .container .menu-footer .col .voice-menu {
+  color: lightgrey;
+  font-size: 1rem;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.footer-top .container .menu-footer .col .voice-menu:hover {
+  color: white;
+  font-weight: bold;
+}
+.footer-top .container .img-logo-footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-top .container .img-logo-footer img {
+  width: 155%;
+  flex-shrink: 0;
+  flex-basis: 0;
+}
