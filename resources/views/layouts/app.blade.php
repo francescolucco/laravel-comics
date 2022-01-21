@@ -13,5 +13,6 @@
    @include('partials.jumbotron')
    @yield('content')
    @include('partials.footer')   
+   @include('partials.footer_bottom')   
 </body>
 </html>
